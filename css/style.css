@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  width: 100%;
+}
+main {
+  border-style: solid;
+}
+.svartRuta {
+  border-style: solid;
+  width: 75px;
+  height: 75px;
+  color: rgb(32, 31, 6)
+}
+.vitRuta {
+  border-style: solid;
+  width: 75px;
+  height: 75px;
+  color: rgb(169, 210, 197)
+}
