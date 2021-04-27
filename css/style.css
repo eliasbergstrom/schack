@@ -17,3 +17,25 @@ main {
   height: 75px;
   color: rgb(169, 210, 197)
 }
+.h1 {
+text-align: center;
+font-family: "Raleway", sans-serif;
+font-weight: bold;
+color: white;
+font-size: 16px
+
+}
+.länk {
+  transition: 0.4s;
+  color: #rgb(180, 52, 18);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.länk:hover {
+  background-color: #ffffff;
+  color: #rgb(240, 52, 18);
+  padding: 24px 10px;
+}
