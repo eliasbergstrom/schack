@@ -4,38 +4,68 @@
 }
 main {
   border-style: solid;
+  text-align: center;
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+}
+.h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+/* Ser till att de hamnar i mitten med margin auto och 50% width*/
+h1{
+  margin: auto;
+  width: 50%;
+}
+h2{
+  margin: auto;
+  width: 50%;
+}
+nav {
+  margin: auto;
+  width: 50%;
+}
+
+/* Fixar dropdownmeny*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Används för bräde*/
 .svartRuta {
   border-style: solid;
   width: 75px;
   height: 75px;
-  color: rgb(32, 31, 6)
+  color: rgb(32, 31, 6);
 }
 .vitRuta {
   border-style: solid;
   width: 75px;
   height: 75px;
-  color: rgb(169, 210, 197)
-}
-.h1 {
-text-align: center;
-font-family: "Raleway", sans-serif;
-font-weight: bold;
-color: white;
-font-size: 16px
-
-}
-.länk {
-  transition: 0.4s;
-  color: #rgb(180, 52, 18);
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-}
-
-.länk:hover {
-  background-color: #ffffff;
-  color: #rgb(240, 52, 18);
-  padding: 24px 10px;
+  color: rgb(169, 210, 197);
 }
