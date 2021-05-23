@@ -2,20 +2,56 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="javascript" href="js/script.js">
+  <link rel="stylesheet" href="css/grid2.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brade</title>
 
+  <!-- Jag vet att vi egentligen borde använda externa script, men av någon anledning funkade inte det -->
+  <script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
 </head>
 <body>
-<div class="brade">
-<div class = "svartRuta" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class = "container">
+  <!--  bara 16 rutor, för jag vet inte hur man gör det här automatiskt-->
+  <!-- kolumn 1 -->
+  <div class = "svartRuta" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <!-- kolumn 2 -->
+  <div class = "vitRuta" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <!-- kolumn 3 -->
+  <div class = "svartRuta" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <!-- kolumn 4 -->
+  <div class = "vitRuta" id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "vitRuta" id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class = "svartRuta" id="div16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-<img id="drag1" src="img/rook.png" draggable="true" ondragstart="drag(event)" width="70" height="70" alt="Rook">
-
+  <img id="drag1" src="img/rook.png" draggable="true" ondragstart="drag(event)" width="70" height="70" alt = "Torn">
+  <img id="drag2" src="img/rook2.png" draggable="true" ondragstart="drag(event)" width="75" height="75" alt = "Torn">
 
 </div>
+
 </body>
 </html>
