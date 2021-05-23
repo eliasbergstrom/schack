@@ -3,12 +3,15 @@
   width: 100%;
 }
 main {
-  border-style: solid;
   text-align: center;
 }
 img {
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 40%;
+  min-height: 40%;
+  max-width: 80%;
+  max-height: 80%;
+  height: auto;
+  width: auto;
 }
 .h1 {
   font-family: "Raleway", sans-serif;
@@ -24,16 +27,13 @@ img {
 }
 /* Ser till att de hamnar i mitten med margin auto och 50% width*/
 h1{
-  margin: auto;
-  width: 50%;
+  text-align: center;
 }
 h2{
-  margin: auto;
-  width: 50%;
+  text-align: center;
 }
 nav {
-  margin: auto;
-  width: 50%;
+  text-align: center;
 }
 
 /* Fixar dropdownmeny*/
